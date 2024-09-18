@@ -1,0 +1,110 @@
+.promolist {
+  overflow-y: auto;
+  width: 100%;
+}
+
+.promolistheader {
+  color: black;
+  padding: 20px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.promolistitem {
+  width: 100%;
+  align-items: center;
+  border-bottom: 0.5px solid rgb(184, 184, 184);
+  border-top: 0.5px solid rgb(184, 184, 184);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-inline-end: 10px;
+}
+
+.promolistitem.active {
+  background-color: rgb(0, 81, 194);
+  color: white;
+}
+
+.promolistitem:not(.active):hover {
+  background-color: aliceblue;
+}
+.promolistitemright {
+  display: flex;
+  align-items: center;
+}
+
+.promolistitemright span {
+  padding: 15px;
+}
+
+.promolistitem img {
+  border-radius: 50px;
+  width: 20%;
+  margin: 15px 20px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.promoiconcontainer {
+  display: flex;
+  gap: 10px;
+}
+
+.addpromobtn {
+  padding-inline: 10px;
+  background: rgb(0, 89, 210);
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  cursor: pointer;
+  justify-content: center;
+  vertical-align: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
+.addpromo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(240, 240, 246);
+  padding: 20px;
+  border: 0.1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  color: black;
+}
+
+/* Add any additional styling for your dialog content */
+.addpromo p {
+  margin-bottom: 10px;
+}
+
+.backgrounddimmer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(240, 240, 246, 0.8);
+}
+
+.promoimg{
+  display: flex;
+  width: 100%;
+  /* margin: 15px 20px; */
+  align-self: center;
+  justify-self: center;
+  /* height: 60px;
+  width: 60px; */
+  cursor: pointer;
+}

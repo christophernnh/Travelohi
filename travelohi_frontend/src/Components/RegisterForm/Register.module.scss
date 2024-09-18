@@ -1,0 +1,253 @@
+.loginbackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(0, 89, 210);
+  background: radial-gradient(
+    circle,
+    rgba(0, 89, 210, 1) 0%,
+    rgba(140, 165, 245, 1) 100%
+  );
+}
+
+.wrapper {
+  width: 150vh;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #fff;
+  border-radius: 10px;
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
+  padding: 30px 40px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  /* text-align: center; */
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.wrapper h2 {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.wrapper h3 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+
+.wrapper .inputbox {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  // background: salmon;
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+
+
+
+.inputbox input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px 45px 20px 20px;
+}
+
+.select {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  background: transparent;
+  color: rgba(90, 90, 90, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.inputbox input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.inputbox .icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.wrapper .rememberforgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.rememberforgot label input {
+  accent-color: #fff;
+  margin-right: 4px;
+}
+
+.rememberforgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.rememberforgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper button {
+  width: 100%;
+  height: 45px;
+  background: #eb4e00;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.wrapper .otpbutton {
+  width: 100%;
+  height: 45px;
+  margin-top: 20px;
+  background: #6f6f6f;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.wrapper .otpbutton:hover {
+  background: #8f8f8f;
+}
+
+.wrapper .otpbuttonotp {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 20px;
+  background: #6f6f6f;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.wrapper .otpbuttonotp:hover {
+  background: #8f8f8f;
+}
+
+.wrapper button:hover {
+  background: #ff5500;
+}
+
+.wrapper .registerlink {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 10px 0 15px;
+}
+
+.registerlink p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.registerlink p a:hover {
+  text-decoration: underline;
+}
+
+.userdetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+.userdetails .inputbox {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+.inputbox span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+
+.inputbox .icon{
+    position: absolute;
+    transform: translateY(110%);
+    font-size: 16px;
+}
+.userdetails .inputbox input {
+  height: 20px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.userdetails .inputbox input:focus{
+  border-color: #9b59b6;
+}
+
+.select{
+    width: 100%;
+    height: 85%;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: white;
+}
+
+.crossIcon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+}
+
+
+.newsletter {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+
+  input[type="checkbox"] {
+    margin-left: 10px;
+
+  }
+}

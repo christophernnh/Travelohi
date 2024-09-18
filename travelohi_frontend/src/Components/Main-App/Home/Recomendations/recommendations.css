@@ -1,0 +1,145 @@
+.recommendationstabcontainer {
+  display: flex;
+  width: 100%;
+}
+
+.recommendationstab {
+  margin-bottom: 20px;
+  margin-inline-end: 10px;
+
+  padding-inline: 10px;
+  padding-block: 10px;
+
+  border-radius: 50px;
+
+  font-weight: 500;
+  font-size: 15px;
+
+  cursor: pointer;
+  color: rgb(0, 81, 194);
+  transition: 0.4s;
+}
+
+.recommendationstab:hover {
+  background: rgb(189, 189, 189);
+}
+
+.recommendationstab.active {
+  background: rgb(0, 81, 194);
+  color: white;
+}
+
+.recommendationscontainer {
+  width: 100%;
+  /* height: 100vh; */
+  padding: 2% 5%;
+  
+}
+
+.recommendationscontainer h1 {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+}
+
+/* .recommendationscontainer h1::after {
+  content: "";
+  background: rgb(0, 81, 194);
+  width: 10%;
+  height: 5px;
+  position: absolute;
+  bottom: -7px;
+  left: 49.5%;
+  transform: translate(-495%);
+} */
+
+.recommendationsrow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.recommendation {
+  /* text-align: center; */
+  /* padding: 25px 50px; */
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.4s;
+  border: 0.2px solid whitesmoke;
+}
+
+.recommendation:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.recommendationlogo {
+  font-size: 50px;
+  color: rgb(0, 81, 194);
+}
+
+.recommendationcardimg {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.flightrecommendationcardimg{
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 60%;
+  object-fit: cover;
+}
+
+.recommendationtextcontainer {
+  padding: 15px 15px;
+}
+
+.recommendationtextcontainer p {
+  vertical-align: center;
+}
+
+.star {
+  color: rgb(255, 208, 0);
+}
+
+.locationpin {
+  color: red;
+}
+
+.clockicon{
+  margin-right: 5px;
+}
+
+.learnmore {
+  color: rgb(0, 81, 194);
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.no-decoration {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.learnmore:hover {
+  color: rgb(95, 162, 255);
+}
+
+.bottomspacer {
+  margin-bottom: 10px;
+}
+
+.recommendationheadertext {
+  font-size: 17px;
+}
+
+.flightrecommendationheadertext {
+  font-size: 12px;
+  margin-left: 5%;
+}

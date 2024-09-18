@@ -1,0 +1,38 @@
+
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(0, 81, 194);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    z-index: 1000;
+}
+
+.fixed-button:hover {
+    background-color: #027cff;
+}
+
+.fixed-game-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    z-index: 1000;
+}
+
+.fixed-game-btn img{
+    width: 150px;
+}
+
+.checkericon{
+    margin-right: 10px;
+}

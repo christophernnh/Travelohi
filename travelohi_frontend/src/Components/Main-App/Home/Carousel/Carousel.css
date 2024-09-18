@@ -1,0 +1,90 @@
+.carousel {
+  width: 100vw;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+
+.carousel div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+  padding: 20px;
+  flex: none;
+  transition: 0.7s;
+}
+
+.carousel div img {
+  width: 100%;
+  transition: 0.5s;
+  height: 150px;
+  object-fit: cover;
+}
+
+.carousel div h2 {
+  color: white;
+  margin: 0;
+  font-size: 20px;
+}
+
+.carousel div img:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carouselwrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 81, 194);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 81, 194, 1) 0%,
+    rgba(86, 157, 255, 1) 17%,
+    rgba(75, 151, 255, 1) 32%,
+    rgba(50, 125, 255, 1) 50%,
+    rgba(75, 140, 255, 1) 66%,
+    rgba(79, 132, 230, 1) 86%,
+    rgba(0, 41, 173, 1) 100%
+  );
+  transition: 0.5s;
+}
+
+.carouselwrap.dark {
+  background: rgb(1, 25, 60);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 25, 60, 1) 0%,
+    rgba(0, 57, 135, 1) 17%,
+    rgba(0, 82, 194, 1) 32%,
+    rgba(0, 47, 128, 1) 50%,
+    rgba(0, 64, 179, 1) 66%,
+    rgba(0, 42, 119, 1) 86%,
+    rgba(0, 41, 173, 1) 100%
+  );
+  transition: 0.5s;
+}
+
+.carouselbutton {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  color: rgb(0, 89, 210);
+  border-radius: 50px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  padding: 2px;
+}
+
+.carouselbutton:hover {
+  color: rgb(0, 106, 255);
+  background-color: aliceblue;
+  cursor: pointer;
+}

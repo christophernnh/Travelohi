@@ -1,0 +1,67 @@
+.userlist {
+  overflow-y: auto;
+  width: 100%;
+}
+
+.userlistheader{
+  color: black;
+  padding: 20px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.userlistitem {
+  width: 100%;
+  align-items: center;
+  border-bottom: 0.5px solid rgb(184, 184, 184);
+  border-top: 0.5px solid rgb(184, 184, 184);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-inline-end: 10px;
+}
+
+.userlistitem.active{
+  background-color: rgb(0, 81, 194);
+  color: white;
+}
+
+.userlistitem:not(.active):hover {
+  background-color: aliceblue;
+}
+.userlistitemright{
+    display: flex;
+    align-items: center;
+}
+
+.userlistitem img {
+  border-radius: 50px;
+  width: 20%;
+  margin: 15px 20px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.iconcontainer{
+  display: flex;
+  gap: 10px;
+}
+
+.mailsendinput{
+  display: none;
+}
+
+.openmailbtn{
+  padding-inline: 10px;
+  background: rgb(0, 89, 210);
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  cursor: pointer;
+  justify-content: center;
+  vertical-align: center;
+  text-align: center;
+}

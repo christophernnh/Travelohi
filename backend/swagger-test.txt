@@ -1,0 +1,17 @@
+POST
+
+{"userId" : "1"}
+
+PUT
+
+{
+  "id": "1",
+  "cardNumber": "1234567890123456",
+  "cvv": "123",
+  "expMonth": "12",
+  "expYear": "2024"
+}
+
+DELETE
+
+{"id" : "1"}

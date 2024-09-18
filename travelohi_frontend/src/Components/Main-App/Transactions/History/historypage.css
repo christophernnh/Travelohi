@@ -1,0 +1,7 @@
+.historyitem{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    border: 0.1px solid grey;
+}

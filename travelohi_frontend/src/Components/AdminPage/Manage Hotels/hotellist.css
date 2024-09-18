@@ -1,0 +1,207 @@
+.hotellist {
+  overflow-y: auto;
+  width: 100%;
+}
+
+.hotellistheader {
+  color: black;
+  padding: 20px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.hotellistitem {
+  width: 100%;
+  align-items: center;
+  border-bottom: 0.5px solid rgb(184, 184, 184);
+  border-top: 0.5px solid rgb(184, 184, 184);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-inline-end: 10px;
+}
+
+.hotellistitem.active {
+  background-color: rgb(0, 81, 194);
+  color: white;
+}
+
+.hotellistitem:not(.active):hover {
+  background-color: aliceblue;
+}
+.hotellistitemright {
+  display: flex;
+  align-items: center;
+}
+
+.hotellistitemright span {
+  padding: 15px;
+}
+
+.hotellistitem img {
+  border-radius: 50px;
+  width: 20%;
+  margin: 15px 20px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hoteliconcontainer {
+  display: flex;
+  gap: 10px;
+}
+
+.addhotelbtn {
+  padding-inline: 10px;
+  background: rgb(0, 89, 210);
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  cursor: pointer;
+  justify-content: center;
+  vertical-align: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
+.addhotel {
+  position: absolute;
+  top: 50%;
+  left: 34vw;
+  transform: translate(-50%, -50%);
+  background: rgb(240, 240, 246);
+  color: black;
+  padding: 20px;
+  border: 0.1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  width: 400px;
+
+  display: flex;
+}
+
+.addhotel2 {
+    position: absolute;
+    top: 50%;
+    left: 66vw;
+    transform: translate(-50%, -50%);
+    background: rgb(240, 240, 246);
+    color: black;
+    padding: 20px;
+    border: 0.1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    width: 400px;
+    height: 600px;
+  }
+
+/* Add any additional styling for your dialog content */
+.addhotel p {
+  margin-bottom: 10px;
+}
+
+.backgrounddimmer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(240, 240, 246, 0.8);
+}
+
+.hotelimg {
+  display: flex;
+  width: 100%;
+  /* margin: 15px 20px; */
+  align-self: center;
+  justify-self: center;
+  /* height: 60px;
+    width: 60px; */
+  cursor: pointer;
+}
+
+
+.alignleft select{
+    width: 175px;
+}
+
+.addroomtypebtn {
+    margin-block: 10px;
+    padding-inline: 10px;
+    background: rgb(0, 89, 210);
+    border: 0px;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+    justify-content: center;
+    vertical-align: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+  }
+
+  .typegroup{
+    padding: 10px;
+    border-radius: 10px;
+    border: 0.5px solid grey;
+    margin-block: 10px;
+
+  }
+
+
+  .addhotelscroll {
+    overflow-y: auto;
+    max-height: 500px; 
+  }
+
+  .addimagescroll {
+    justify-content: space-between;
+    padding: 20px;
+    margin-block: 10px;
+    overflow-x:hidden;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 15px;
+    overflow-y: auto;
+    max-height: 200px;  
+    /* max-width: 500px; */
+    border: 0.5px dashed grey;
+  }
+  .addimagescroll::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+
+  .addhotelscroll::-webkit-scrollbar-track-piece {
+    /* height: 0;
+    width: 0; */
+  }
+
+  .addroomtypedelete{
+    border: none;
+    vertical-align: center;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .facilitycheckbox{
+    margin-right: 10px;
+  }
+
+  .hotelimg{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+  }

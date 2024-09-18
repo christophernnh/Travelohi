@@ -1,0 +1,134 @@
+.flightdetailtop {
+  display: flex;
+  width: 100%;
+}
+
+.flightdetailtopcol {
+  flex: 1;
+  border-right: 0.1px solid #ccc;
+  border-bottom: 0.1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.flightdetailtopcol:first-child {
+  flex: 0 0 60%; /* Set the first column to be 80% of the container width */
+}
+
+.flightdetailtopcolimg {
+  height: 50px;
+}
+
+.flightdetailtopcolheader {
+  margin-top: 4%;
+  margin-left: 4%;
+  font-size: 13px;
+}
+
+.flightfromtocol {
+  margin-top: 4%;
+  flex: 1;
+  /* border: 1px solid grey; */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.flightfromtocol:first-child {
+  /* margin-left: 4%; */
+  text-align: center;
+}
+
+.flightfromtocol:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flightfromtocol:nth-child(3) {
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Adjust the number of columns as needed */
+  gap: 10px; /* Adjust the gap between seats as needed */
+}
+
+.seat-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+
+.available {
+  background-color: green;
+}
+
+.occupied {
+  background-color: red;
+  pointer-events: none;
+  cursor:not-allowed;
+}
+
+.seatspopupcontainer {
+  overflow-y: scroll;
+  position: absolute;
+  z-index: 998;
+  background: white;
+  padding: 20px;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  display: flex;
+}
+
+.closeseatbtn {
+  padding-inline: 5px;
+  padding-block: 10px;
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(0, 81, 194);
+  border-radius: 5px;
+  width: fit-content;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.orderticketbtn {
+  padding-inline: 20px;
+  padding-block: 10px;
+  margin-block: 20px;
+  color: white;
+  background-color: rgb(0, 81, 194);
+  border-radius: 5px;
+  width: fit-content;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.addpassengerdetail {
+  padding: 20px;
+  max-width: 200px;
+}
+
+.seatsblur {
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background: rgb(0, 0, 0, 0.85);
+  z-index: 998;
+}
+
+.selected {
+  background-color: orange;
+  color: black;
+}

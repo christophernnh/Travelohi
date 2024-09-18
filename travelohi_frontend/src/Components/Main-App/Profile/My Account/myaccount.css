@@ -1,0 +1,83 @@
+.accountcontainer {
+  padding: 50px;
+}
+
+.row1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-block: 6px;
+  justify-content: center;
+}
+
+.row1 img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.row1 .small {
+  width: 100%;
+  border-left: 1px solid white;
+}
+
+.row1 .small input {
+  width: 100%;
+}
+
+.row1 button {
+  width: 100%;
+  background: rgb(0, 89, 210);
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  cursor: pointer;
+  vertical-align: center;
+  text-align: center;
+}
+
+.alignleft {
+  justify-content: start;
+}
+
+.editbtn {
+  background-color: grey;
+  width: 100px;
+  border-radius: 20px;
+  transition: 0.3s;
+  color: white;
+}
+
+.editbtn:hover {
+  background-color: rgb(151, 151, 151);
+}
+
+.row1 input{
+    padding-inline: 5px;
+}
+
+.radiocontainer{
+    color: rgb(52, 52, 52);
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding-block-end: 6px;
+}
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fileinput{
+    display: none;
+}
+
+.buttonStyle{
+    padding-inline: 10px;
+}

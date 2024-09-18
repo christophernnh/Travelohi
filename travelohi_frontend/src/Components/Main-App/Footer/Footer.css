@@ -1,0 +1,87 @@
+
+.footer{
+    width: 100%;
+    /* position: absolute; */
+    bottom: 0;
+    background: rgb(28, 35, 44);
+    padding: 50px 0 50px;
+    font-size: 13px;
+    line-height: 20px;
+    color: aliceblue;
+}
+
+.footerrow{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footercol{
+    flex-basis: 25%;
+}
+
+.footerlogo{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.footercol h3{
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.emailid{
+    width: fit-content;
+    border-bottom: 1px solid aliceblue;
+    margin: 20px 0;
+}
+
+.footercol{
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.footercollinks{
+    display: flex;
+    gap: 7px;
+    margin-top: 0;
+}
+
+.footercol a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+.footercol a:hover{
+    font-weight: 500;
+}
+
+.socials{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.tagline{
+    /* margin-left: 45px; */
+    margin-top: 2px;
+}
+
+.partnerscontainer{
+    display: flex;
+    gap: 10px;
+}
+
+.partners{
+    max-height: 40px;
+}
+
+.tenpxgap{
+    padding-top: 10px;
+}

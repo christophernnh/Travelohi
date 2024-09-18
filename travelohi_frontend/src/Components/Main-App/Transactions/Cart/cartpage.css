@@ -1,0 +1,41 @@
+ .showmorebutton{
+    color: rgb(0, 89, 210);
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 0;
+    width: 110px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.totalpriceheader{
+    padding-bottom: 20px;
+    color: rgb(255, 94, 35);
+    display: flex;
+    gap: 10px;
+}
+
+.checkoutbtn {
+    display: flex;
+    background: orangered;
+    padding-inline: 10px;
+    padding-block: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .strike{
+    text-decoration: line-through;
+  }
+
+  .paymentmethodcontainer{
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+  }

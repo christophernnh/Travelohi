@@ -1,0 +1,109 @@
+.adminpagecontainer {
+  display: flex;
+  max-height: 1000vh;
+  min-height: 80vh;
+}
+
+.admincol {
+  color: white;
+  min-height: inherit;
+
+  /* padding: 10px; */
+  /* flex: 50%; */
+  align-self: stretch;
+}
+
+.admincol:nth-child(1) {
+  /* background: black; */
+  flex: 4;
+  justify-content: end;
+  align-items: center;
+  border-right: 0.2px solid grey;
+}
+
+.admincol:nth-child(2) {
+  flex: 7;
+  justify-content: start;
+  /* align-items: center; */
+  display: flex;
+  border-right: 0.2px solid grey;
+}
+
+.admincol:nth-child(3) {
+  flex: 7;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  color: black;
+  padding: 20px;
+}
+
+.adminprofilehead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* border-bottom: 1px solid rgb(184, 184, 184); */
+  color: black;
+}
+
+.adminprofilehead img {
+  border-radius: 50px;
+  width: 20%;
+  margin: 15px 20px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.adminpage-userimg{
+  border-radius: 50px;
+  width: 20%;
+  /* margin: 15px 20px; */
+  align-self: center;
+  justify-self: center;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.adminprofilehead h5 {
+  font-size: 12px;
+}
+
+.adminprofilehead p {
+  font-size: 10px;
+}
+
+.adminleftgroup {
+  width: 100%;
+  align-items: center;
+  /* border-bottom: 1px solid rgb(184, 184, 184); */
+  color: black;
+  padding-block: 10px;
+}
+
+.promoimg{
+  display: flex;
+  width: 100%;
+  max-height: 200px;
+  /* margin: 15px 20px; */
+  align-self: center;
+  justify-self: center;
+  /* height: 60px;
+  width: 60px; */
+  cursor: pointer;
+}
+
+.choosePromoBtn{
+  margin-block: 10px;
+  padding-inline: 10px;
+  background: rgb(0, 89, 210);
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  cursor: pointer;
+  justify-content: center;
+  vertical-align: center;
+  text-align: center;
+}

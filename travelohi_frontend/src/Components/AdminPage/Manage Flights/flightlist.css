@@ -1,0 +1,147 @@
+.flightlist {
+  overflow-y: auto;
+  width: 100%;
+}
+
+.flightlistheader {
+  color: black;
+  padding: 20px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.flighticoncontainer {
+  display: flex;
+  gap: 10px;
+}
+
+.backgrounddimmer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(240, 240, 246, 0.8);
+}
+
+.closebutton {
+  font-size: 30px;
+  color: black;
+  margin-top: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.addflightcontainer {
+  position: absolute;
+  background: white;
+  top: 10%;
+  left: 10%;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  height: 80%;
+  width: 80%;
+}
+
+.addflightsubcontainer {
+  display: flex;
+  /* flex-direction: column ; */
+  width: 100%;
+  height: 50%;
+}
+
+.addflightsubcontainerbottom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+}
+
+.addflightcolumn {
+  color: black;
+  flex: 1;
+  border-inline: 0.1px solid grey;
+  border-bottom: 0.1px solid grey;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.addflightprototypeheader {
+  width: 100%;
+  height: 30%;
+  border-bottom: 0.2px solid grey;
+  display: flex;
+  color: black;
+  padding-left: 5%;
+  padding-block: 1%;
+  font-size: 12px;
+}
+
+.addflightprototypeheader img {
+  width: 150px;
+  object-fit: contain;
+}
+
+.addflightprototypebody {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  color: black;
+  padding-inline: 20px;
+  padding-block: 10px;
+}
+
+.addflightprototypebody div {
+  /* flex: 1; */
+  /* border: 1px solid blue; */
+}
+
+.flightpointcol {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  flex-direction: column;
+}
+
+.airporttext {
+  font-size: 20px;
+}
+
+.citycountrytext {
+  font-size: 15px;
+}
+
+.flightdatetext {
+  font-size: 15px;
+}
+
+.transitcontainer {
+  display: flex;
+  align-self: center;
+  justify-content: right;
+  padding-right: 60px;
+  width: 100%;
+}
+
+.createflightbutton {
+  display: flex;
+  background:rgb(0, 89, 210);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.createflightbuttoncontainer {
+  display: flex;
+  /* background: red; */
+  height: 40%;
+  justify-content: end;
+  align-items: end;
+}

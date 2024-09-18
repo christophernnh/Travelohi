@@ -1,0 +1,61 @@
+.dropdowncontainerpay {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5rem;
+  right: 20%;
+  width: 15%;
+  padding: 15px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  background-color: white;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+.dropdowncontainerpay.dark {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.dropdownitempay {
+  display: flex;
+  flex-direction: column;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  text-align: start;
+}
+
+.tooltip:hover {
+  font-weight: 500;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  margin-left: 20px;
+  padding: 5px 0;
+  border: 1px solid black;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.headers{
+    text-decoration: 1px underline;
+    text-align: start;
+}

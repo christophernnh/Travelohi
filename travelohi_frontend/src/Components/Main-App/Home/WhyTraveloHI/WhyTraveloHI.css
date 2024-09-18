@@ -1,0 +1,60 @@
+.whycontainer{
+    width: 100%;
+    /* height: 100vh; */
+    padding: 2% 5%;
+    
+}
+
+.whycontainer h1{
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+}
+
+.whycontainer h1::after{
+    content: '';
+    background: rgb(0, 81, 194);
+    width: 10%;
+    height: 5px;
+    position: absolute;
+    bottom: -7px;
+    left: 49.5%;
+    transform: translate(-495%);
+
+}
+
+.whyrow{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.service{
+    text-align: center;
+    /* padding: 25px 50px; */
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.6s;
+    border: 0.2px solid whitesmoke;
+}
+
+.service:hover{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    scale: 1.05;
+}
+
+.servicelogo{
+    font-size: 50px;
+    color: rgb(0, 81, 194);
+}
+
+.cardimg{
+    width: 100%;
+}
+
+.textcontainer{
+    padding: 15px 30px;
+}

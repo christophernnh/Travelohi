@@ -1,0 +1,269 @@
+basePath: /
+definitions:
+  controllers.ErrorResponse:
+    properties:
+      message:
+        type: string
+    type: object
+  controllers.ErrorResponseDeletePromo:
+    properties:
+      error:
+        type: string
+    type: object
+  controllers.ErrorResponseUser:
+    properties:
+      message:
+        type: string
+    type: object
+  controllers.HotelTransactionDetails:
+    properties:
+      address:
+        type: string
+      checkindate:
+        type: string
+      checkoutdate:
+        type: string
+      city:
+        type: string
+      country:
+        type: string
+      hotelid:
+        type: string
+      id:
+        type: integer
+      ispaid:
+        type: boolean
+      name:
+        type: string
+      orderdate:
+        type: string
+      paymentmethod:
+        type: string
+      price:
+        type: number
+      roomname:
+        type: string
+      roomtypeid:
+        type: string
+    type: object
+  controllers.HotelTransactionResponse:
+    properties:
+      body:
+        description: 'in: body'
+        properties:
+          hoteltransactions:
+            description: HotelTransactions is a list of hotel transaction details.
+            items:
+              $ref: '#/definitions/controllers.HotelTransactionDetails'
+            type: array
+          message:
+            type: string
+        type: object
+    type: object
+  controllers.SuccessResponse:
+    properties:
+      message:
+        type: string
+    type: object
+  controllers.SuccessResponseDeletePromo:
+    properties:
+      message:
+        type: string
+    type: object
+  controllers.SuccessResponseUser:
+    properties:
+      message:
+        type: string
+      user:
+        $ref: '#/definitions/models.User'
+    type: object
+  models.User:
+    properties:
+      birthDate:
+        type: string
+      cardnumber:
+        type: string
+      cvv:
+        type: string
+      email:
+        type: string
+      expiremonth:
+        type: string
+      expireyear:
+        type: string
+      firstname:
+        type: string
+      gender:
+        type: string
+      id:
+        type: integer
+      isbanned:
+        type: boolean
+      issubscribed:
+        type: boolean
+      lastname:
+        type: string
+      otp:
+        type: string
+      otpexpiry:
+        type: string
+      profilepicture:
+        type: string
+      role:
+        type: string
+      securityAnswer:
+        type: string
+      securityQuestion:
+        type: string
+    type: object
+host: localhost:8000
+info:
+  contact: {}
+  description: This is the API documentation for TraveloHI
+  title: TraveloHI API
+  version: "1.0"
+paths:
+  /api/deletepromo:
+    delete:
+      consumes:
+      - application/json
+      description: Delete a promo based on the given ID.
+      parameters:
+      - description: Promo ID
+        in: body
+        name: id
+        required: true
+        schema:
+          type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.SuccessResponseDeletePromo'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/controllers.ErrorResponseDeletePromo'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/controllers.ErrorResponseDeletePromo'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/controllers.ErrorResponseDeletePromo'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete promo by ID
+      tags:
+      - Promo
+  /api/gethoteltransactions:
+    post:
+      consumes:
+      - application/json
+      description: Get hotel transactions based on user ID
+      parameters:
+      - description: User ID
+        in: body
+        name: userId
+        required: true
+        schema:
+          type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.HotelTransactionResponse'
+      summary: Get hotel transactions for a user
+      tags:
+      - HotelTransactions
+  /api/updatecredit:
+    put:
+      consumes:
+      - application/json
+      description: Update the credit card details for a user.
+      parameters:
+      - description: User ID
+        in: body
+        name: id
+        required: true
+        schema:
+          type: string
+      - description: Credit card number (16 digits)
+        in: body
+        name: cardNumber
+        required: true
+        schema:
+          type: string
+      - description: CVV (3 digits)
+        in: body
+        name: cvv
+        required: true
+        schema:
+          type: string
+      - description: Expiration month (1-12)
+        in: body
+        name: expMonth
+        required: true
+        schema:
+          type: string
+      - description: Expiration year
+        in: body
+        name: expYear
+        required: true
+        schema:
+          type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.SuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/controllers.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/controllers.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/controllers.ErrorResponse'
+      summary: Update user credit card information
+      tags:
+      - User
+  /api/user:
+    get:
+      consumes:
+      - application/json
+      description: Get details of the authenticated user.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.SuccessResponseUser'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/controllers.ErrorResponseUser'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/controllers.ErrorResponseUser'
+      security:
+      - ApiKeyAuth: []
+      summary: Get user details
+      tags:
+      - User
+schemes:
+- http
+swagger: "2.0"
